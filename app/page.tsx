@@ -1,7 +1,11 @@
 "use client";
 import { useState } from "react";
 import { AudioRecorderWithVisualizer } from "@/components/audio-recorder-with-visualizer";
-import { PageHeader, PageHeaderHeading } from "@/components/ui/page";
+import {
+  PageHeader,
+  PageHeaderHeading,
+  PageHeaderDescription,
+} from "@/components/ui/page";
 import { Label } from "@/components/ui/label";
 import {
   Select,
@@ -26,7 +30,10 @@ export default function Home() {
   return (
     <div className="container relative flex-1 flex flex-col justify-center items-center min-h-screen">
       <PageHeader>
-        <PageHeaderHeading>Audio recorder with visualizer</PageHeaderHeading>
+        <PageHeaderDescription>
+          Experiment with multiple audio visualizer types and see them in
+          action!
+        </PageHeaderDescription>
 
         {/* ===== Variant selector ===== */}
         <div className="my-4 w-60 space-y-2">
@@ -53,8 +60,8 @@ export default function Home() {
               <SelectValue placeholder="Select type" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="bars">Bars</SelectItem>
               <SelectItem value="line">Line</SelectItem>
+              <SelectItem value="bars">Bars</SelectItem>
               <SelectItem value="circle">Circle</SelectItem>
               <SelectItem value="wave">Wave</SelectItem>
               <SelectItem value="verticalBars">Vertical Bars</SelectItem>

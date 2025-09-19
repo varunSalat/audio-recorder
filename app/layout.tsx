@@ -9,10 +9,12 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Audio Recorder and Visualizer | Built with Shadcn UI",
-  description: "Audio Recorder and Visualizer | Built with Shadcn UI",
+  title: "Audio Recorder and Visualizer",
+  description: "Audio Recorder and Visualizer with multiple canvas types",
+  creator: "Varun", // your name here
+  authors: [{ name: "Varun", url: "https://varun-salat.vercel.app/" }],
+  keywords: ["audio recorder", "visualizer", "react", "shadcn ui"],
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
